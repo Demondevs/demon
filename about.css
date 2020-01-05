@@ -1,0 +1,145 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+html{
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	color: #333;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+	float: left;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
+a {
+	color: #384840;
+	text-decoration: none;
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+a:hover {
+	color: #efdea0;
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+.clear {
+	clear: both;
+}
+/*Стили для шапки*/
+header {
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: #fafafa;
+	border-bottom: 2px solid silver;
+	margin-bottom: 20px;
+}
+header #logo {
+	width: 30%;
+	float: left;
+}
+header #logo a {
+	color: #939393;
+	font-size: 2em;
+	font-family: "Times New Roman", sans-serif;
+}
+header #logo span {
+	color: #e46565;
+}
+header #menuHead {
+	width: 34%;
+	float: left;
+}
+header #menuHead div {
+	float: left;
+	background-color: #c8c8c8;
+	padding: 5px;
+	border-radius: 5px;
+	color: #ffffff;
+}
+header #menuHead div:hover {
+	background-color: #e7e7e7;
+}
+header #regAuth {
+	width: 30%;
+	float: left;
+	text-align: right;
+	font-size: 1.2em;
+}
+/*стили для всего документа*/
+#wrapper {
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+}
+/*Стили для левой колонки*/
+#wrapper #leftCol {
+	width: 70%;
+	margin-right: 10%;
+	float: left;
+}
+/*Стили для правой колонки*/
+#wrapper #rightCol {
+	width: 20%;
+	float: left;
+}
+#wrapper #rightCol .banner {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	border: 2px solid silver;
+	box-sizing: border-box;
+}
+
+/*Стили для Footer*/
+footer {
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: #fafafa;
+	border-top: 2px solid silver;
+	margin-top: 10px;
+}
+footer #social {
+	float: left;
+	width: 50%;
+}
+footer #social img {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 10px;
+}
+footer #rights {
+	float: right;
+	width: 50%;
+	text-align: right;
+	font-size: 1.1em;
+}
+/*стили для страницы о нас*/
+#wrapper #leftCol #about_us {
+	width: 76%;
+	margin-left: 10%;
+	border: 1px solid silver;
+	background-color: #f4f4f4;
+	padding: 2%;
+}
