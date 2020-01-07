@@ -4,16 +4,50 @@
 	<title>Статья 1</title>
 	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="article.css">
-    <link rel="icon" href="./img/icon.png">
+    <link rel="icon" href="/demonplay.org/img/icon.png">
 </head>
 <body>
 	<header>
+	<div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Меню</button>
+        <div id="myDropdown" class="dropdown-content">
+           <a href="./about.html">О авторе</a>
+           <a href="./feedback.html">Обратная связь</a>
+           <a href="./reg.html">Регистрация</a>
+           <a href="./auth.html">Авторизация</a>
+           <a href="./profile.html">Профиль</a>
+        </div>
+    </div>
+
+    <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 		<div id="logo">
-			<a href="./index.html" title="Перейти на главную страницу">
+			<a href="/demonplay.org/index.html" title="Перейти на главную страницу">
 				<span>D</span>emon
 			</a>
 		</div>
-		<div id="menuHead">
+		<!-- <div id="menuHead">
 			<a href="./about.html">
 				<div style="margin-right: 5%">О авторе</div>
 			</a>
@@ -23,7 +57,7 @@
 		</div>
 		<div id="regAuth">
 			<a href="./reg.html">Регистрация</a> | <a href="./auth.html">Авторизация</a>
-		</div>
+		</div> -->
 	</header>
 	<div id="wrapper">
 		<div id="leftCol">
@@ -32,17 +66,17 @@
  		</div>
 	    <div id="rightCol">
 			<div class="banner">
-				<img src="./img/banner_1.jpg" alt="Баннер 1" title="Баннер 1">
+				<img src="/demonplay.org/img/banner_1.jpg" alt="Баннер 1" title="Баннер 1">
 			</div>
 			<div class="banner">
-				<img src="./img/banner_2.png" alt="Баннер 2" title="Баннер 2">
+				<img src="/demonplay.org/img/banner_2.png" alt="Баннер 2" title="Баннер 2">
 			</div>
 		</div>
 	</div>
 	<footer>
 		<div id="social">
 			<a href="https://vk.com" title="Группа Вк" target="_blank">
-				<img src="./img/vk.png" alt="Вк" title="Вк">
+				<img src="/demonplay.org/img/vk.png" alt="Вк" title="Вк">
 			</a>
 		</div>
 		<div id="rights">

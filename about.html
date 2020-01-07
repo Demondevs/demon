@@ -4,48 +4,101 @@
 	<title>О авторе</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="about.css">
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="/demonplay.org/img/icon.png">
 </head>
 <body>
 	<header>
+	<div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Меню</button>
+        <div id="myDropdown" class="dropdown-content">
+           <a href="./about.html">О авторе</a>
+           <a href="./feedback.html">Обратная связь</a>
+           <a href="./reg.html">Регистрация</a>
+           <a href="./auth.html">Авторизация</a>
+           <a href="./profile.html" title="Для авторизованных пользователей">Профиль</a>
+        </div>
+    </div>
+
+    <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 		<div id="logo">
-			<a href="index.html" title="Перейти на главную страницу">
+			<a href="/demonplay.org/index.html" title="Перейти на главную страницу">
 				<span>D</span>emon
 			</a>
 		</div>
-		<div id="menuHead">
-			<a href="about.html">
+		<!-- <div id="menuHead">
+			<a href="./about.html">
 				<div style="margin-right: 5%">О авторе</div>
 			</a>
-			<a href="feedback.html">
+			<a href="./feedback.html">
 			   <div>Обратная связь</div>
 		    </a>
 		</div>
 		<div id="regAuth">
-			<a href="reg.html">Регистрация</a> | <a href="auth.html">Авторизация</a>
-		</div>
+			<a href="./reg.html">Регистрация</a> | <a href="./auth.html">Авторизация</a>
+		</div> -->
 	</header>
 	<div id="wrapper">
 		<div id="leftCol">
 			<!-- Содержимое страницы -->
 			<div id="about_us">
-				<h2>Информация о авторе</h2>
-				<p>Здравствуйте! Меня зовут Дашук Константин. Мне 17 лет, и я программист. А точнее я учусь на него. И да, я научился писать сайты не с помощью веб-сервисов, а в колледже. Я создал этот сайт для того, чтобы выкладывать информацию о себе каждый день.Да, я, можно считать, начал ввести свой собственный электронный дневник. А более подробную информацию обо мне ищите на главной, в блоках. До встречи!</p>
+				<h1>Профиль автора</h1>
+				<img src="./img/avatar.jpg" alt="Аватар" class="avatar">
+				<h2>Константин дашук</h2>
+			<div class="uls">
+				<p class="leftdon1">Прозвище:</p>
+				<p class="kiborg">Киборг</p>
+				<p class="leftdon2">День рождения:</p>
+				<p class="data">21.03.2002г.</p>
+				<p class="leftdon3">Пол:</p>
+				<p class="pol">Мужской</p>
+				<p class="leftdon4">Семейное положение:</p>
+				<p class="poisk">В активном поиске</p>
+				<p class="leftdon5">Родной город:</p>
+				<p class="gorod">Томск</p>
+				<p class="leftdon6">Страна:</p>
+				<p class="strana">Россия</p>
+				<p class="leftdon7">Проффесия:</p>
+				<p class="proffes">Программист</p>
+				<p class="leftdon8">Сообщение:</p>
+				<p class="mail">Здравствуйте! Меня зовут Дашук Константин. Мне 17 лет, и я программист. А точнее я учусь на него. И да, я научился писать сайты не с помощью веб-сервисов, а в колледже. Я создал этот сайт для того, чтобы выкладывать информацию о себе каждый день.Да, я, можно считать, начал ввести свой собственный электронный дневник. До встречи!</p>
+			</div>
 			</div>
 		</div>
 	    <div id="rightCol">
 			<div class="banner">
-				<img src="img/banner_1.jpg" alt="Баннер 1" title="Баннер 1">
+				<img src="/demonplay.org/img/banner_1.jpg" alt="Баннер 1" title="Баннер 1">
 			</div>
 			<div class="banner">
-				<img src="img/banner_2.png" alt="Баннер 2" title="Баннер 2">
+				<img src="/demonplay.org/img/banner_2.png" alt="Баннер 2" title="Баннер 2">
 			</div>
 		</div>
 	</div>
 	<footer>
 		<div id="social">
 			<a href="https://vk.com" title="Группа Вк" target="_blank">
-				<img src="img/vk.png" alt="Вк" title="Вк">
+				<img src="/demonplay.org/img/vk.png" alt="Вк" title="Вк">
 			</a>
 		</div>
 		<div id="rights">

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php 
-	
-	?>
 	<script language="php">
 		require_once "functions/functions.php";
 	    $news = getNews (3);
@@ -11,16 +8,50 @@
     <title>DemonPlay</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="./img/icon.png">
+    <link rel="icon" href="/demonplay.org/img/icon.png">
 </head>
 <body>
 	<header>
+	<div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Меню</button>
+        <div id="myDropdown" class="dropdown-content">
+           <a href="./about.html">О авторе</a>
+           <a href="./feedback.html">Обратная связь</a>
+           <a href="./reg.html">Регистрация</a>
+           <a href="./auth.html">Авторизация</a>
+           <a href="./profile.html" title="Для авторизованных пользователей">Профиль</a>
+        </div>
+    </div>
+
+    <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 		<div id="logo">
-			<a href="./index.html" title="Перейти на главную страницу">
+			<a href="/demonplay.org/index.html" title="Перейти на главную страницу">
 				<span>D</span>emon
 			</a>
 		</div>
-		<div id="menuHead">
+		<!-- <div id="menuHead">
 			<a href="./about.html">
 				<div style="margin-right: 5%">О авторе</div>
 			</a>
@@ -30,7 +61,7 @@
 		</div>
 		<div id="regAuth">
 			<a href="./reg.html">Регистрация</a> | <a href="./auth.html">Авторизация</a>
-		</div>
+		</div> -->
 	</header>
 	<div id="wrapper">
 		<div id="leftCol">
@@ -58,7 +89,7 @@
 			<div id="bigArticle">
 				<img src="./img/article_1.jpg" alt="Статья 1" title="Статья 1">
 				<h2>Статья 1</h2>
-				<p>Абзац под заголовком</p>
+				<p>Абзац под заголовкомАбзац под заголовкомАбзац под заголовкомАбзац под заголовкомАбзац под заголовкомАбзац под заголовкомАбзац под заголовкомАбзац под заголовкомАбзац под заголовкомАбзац под заголовкомАбзац под заголовкомАбзац под заголовком</p>
 				<a href="./article.html">
 				  <div class="more">Далее</div>
 			    </a>
